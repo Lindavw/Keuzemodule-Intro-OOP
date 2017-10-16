@@ -1,8 +1,8 @@
 #include <iostream>
 #include "Boek.h"
-#include "Boekenkast.h"
+#include "Bibliotheek.h"
 
-void verwisselBoek(Boekenkast* nieuwBoek) {
+void verwisselBoek(Bibliotheek* nieuwBoek) {
 	cout << "nieuw boek gekregen" << endl;
 	nieuwBoek->toon();
 	nieuwBoek->voegToe("Oorsprong");
@@ -13,7 +13,7 @@ void verwisselBoek(Boekenkast* nieuwBoek) {
 
 int main() {
 
-	Boekenkast* nieuwBoek = new Boekenkast();
+	Bibliotheek* nieuwBoek = new Bibliotheek();
 	nieuwBoek->toon();
 	nieuwBoek->voegToe("IT");
 	nieuwBoek->toon();
